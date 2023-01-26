@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Default Form Styles</title>
+  <script src="path/to/script.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+<div id="start-screen">
+    <button id="start-button" onclick="startQuiz()">Start</button>
+  </div>
+  
+  <div id="quiz-screen" style="display:none;">
+    <div id="timer"></div>
+    <div id="question"></div>
+    <div id="answers">
+      <button class="answer-button" onclick="checkAnswer(this.innerHTML)"></button>
+      <button class="answer-button" onclick="checkAnswer(this.innerHTML)"></button>
+      <button class="answer-button" onclick="checkAnswer(this.innerHTML)"></button>
+    </div>
+  </div>
+  
+  <div id="end-screen" style="display:none;">
+    <div id="final-score"></div>
+    <form>
+      <label for="initials">Enter your initials:</label>
+      <input type="text" id="initials">
+      <button onclick="saveScore()">Save</button>
+    </form>
+  </div>
+</body>
+  
